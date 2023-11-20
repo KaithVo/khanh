@@ -7,11 +7,19 @@ void setup(){
 
 void draw(){
   background(0);
+<<<<<<< HEAD
+   for (int x = particles.size()-1 ; x >=0 ; x--){//loop backward
+    particles.get(x).update();
+    particles.get(x).display();
+    if (particles.get(x).position.y > 400) {//the particles out of the bootom of the canvasd
+      particles.remove(x);
+=======
    for (int j = particles.size()-1 ; j >=0 ; j--){//loop backward
     particles.get(j).update();
     particles.get(j).display();
     if (particles.get(j).position.y > 400) {//the particles out of the bootom of the canvasd
       particles.remove(j);
+>>>>>>> 76a770a6d793d7b0f34c44a6d2dc6aa18464b1ba
   }
   if(mousePressed == true) {
     particles.add(new Particle(mouseX, mouseY));
