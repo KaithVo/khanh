@@ -12,6 +12,7 @@ void draw(){
     particles.get(j).display();
     if (particles.get(j).position.y > 400) {//the particles out of the bootom of the canvasd
       particles.remove(j);
+    }
   }
   if(mousePressed == true) {
     particles.add(new Particle(mouseX, mouseY));
